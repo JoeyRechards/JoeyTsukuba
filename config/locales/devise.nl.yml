@@ -1,0 +1,55 @@
+en:
+  errors:
+    messages:
+      expired: "is verlopen, vraag een nieuwe aan"
+      not_found: "niet gevonden"
+      already_confirmed: "was al bevestigd, probeer opnieuw in te loggen"
+      not_locked: "was niet gelocked"
+      not_saved:
+        one: "1 fout voorkwam dat %{resource} werd opgeslagen:"
+        other: "%{count} fouten voorkwamen dat %{resource} werd opgeslagen:"
+
+  devise:
+    failure:
+      already_authenticated: 'Je bent al ingelogd'
+      unauthenticated: 'Je moet inloggen om verder te gaan.'
+      unconfirmed: 'Je moet je account bevestigen om door de gaan'
+      locked: 'Je account is gelocked.'
+      invalid: 'Verkeerde email of password.'
+      invalid_token: 'Verkeerd wachtwoord'
+      timeout: 'Je sessie is verlopen, log opnieuw in om verder te gaan.'
+      inactive: 'Je account is nog niet geactiveerd'
+    sessions:
+      signed_in: 'Login is gelukt'
+      signed_out: 'Logout succesvol'
+    passwords:
+      send_instructions: 'Je krijgt een email met instucties hoe je je wachtwoord kan veranderen.'
+      updated: 'Je wachtwoord is succesvol verandert. Je bent nu ingelogd'
+      updated_not_active: 'Het veranderen van je wachtwoord is gelukt'
+      send_paranoid_instructions: "Als je mailadres in ons database voorkomt krijgt je een link gemailt waarin staat hoe je je wachtwoord kan herstellen."
+    confirmations:
+      send_instructions: 'Je krijgt binnen enkele minuten een mail waarin staat hoe je je account kan bevestigen.'
+      send_paranoid_instructions: 'Als je email adres in onze database staat krijgt u binnen enkele minuten een mail met instucties hoe je je mail bevestigen.'
+      confirmed: 'Je account is geactiveerd. Je bent nu ingelogd.'
+    registrations:
+      signed_up: 'Fafi, je login is boeng gegaan'
+      signed_up_but_unconfirmed: 'Een bericht met bevestigingslink is naar je mailadres gestuurd. Open de link om je account te activeren.'
+      signed_up_but_inactive: 'Je bent succesvol aangemeld. Maar omdat je je account nog niet hebt geactiveerd ben je nog niet ingelogd.'
+      signed_up_but_locked: 'Je bent succelvol aangemeld. Maar we konden je niet inloggen omdat je account is geblokkeerd'
+      updated: 'Je hebt je account succesvol geupdate.'
+      update_needs_confirmation: "Je hebt je account succesvol geupdate, maar we moeten je nieuwe e-mailadres verifieren. Check je mail en klik op de bevestigings link om uw nieuwe mailadres te bevestigen."
+      destroyed: 'Doei, je account is verwijderd. Kom ook maar niet meer terug.'
+    unlocks:
+      send_instructions: 'Je ontvangt in enkele minuten een mail waarin staat hoe je je account kan deblokkeren.'
+      unlocked: 'Je account is succesvol gedeblokkeerd. Log in om verder te gaan.'
+      send_paranoid_instructions: 'Als je account bestaat zul je aan mail krijgen met instructies hoe je je account kan deblokkeren.'
+    omniauth_callbacks:
+      success: 'Successvol geauthentificeerd van %{kind} account.'
+      failure: 'Kon je niet authentificeren van %{kind} omdat "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Bevestigings Instructies'
+      reset_password_instructions:
+        subject: 'Wachtwoord reset Instructies'
+      unlock_instructions:
+        subject: 'Deblokkeer Instructies'

@@ -10,11 +10,12 @@
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
-
+current language: <%= I18n.locale %>
+<br />
 
 <% if current_user %>
 
-<%= link_to "Get Out", destroy_user_session_path, :method => :delete %>
+<%= link_to t("logout"), destroy_user_session_path, :method => :delete %>
 
 <% end -%>
 
