@@ -7,10 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <div class="container">
+
+<sections>
+  <div class="row">
+  <div class="span12">
+    <% unless flash.empty? %>
+
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
+<% end %>
 
-current language: <%= I18n.locale %>
+
 <br />
 
 <% if current_user %>
@@ -21,5 +30,8 @@ current language: <%= I18n.locale %>
 
 <%= yield %>
 
+  </div>
+  </div>
+  </div>
 </body>
 </html>
