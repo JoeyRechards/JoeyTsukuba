@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
 */
+
+.sing_in .well {
+    border: none;
+    background: grey ;
+}
+

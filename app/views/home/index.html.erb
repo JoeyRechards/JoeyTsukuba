@@ -1,13 +1,9 @@
-Twitter feed
 
 <% for tweet in @tweets %>
-<div class="hero">
-  <p class="pull-left">
-    <img src="<%= tweet.user.profile_image_url %>" />
-  </p>
-  <div class="container ac">
-    <h3><%= tweet.text%></h3>
-  <%= tweet.text %>
-  </div>
-</div>
-<% end -%>
+  <blockquote class="twitter-tweet"><p>
+    <p><%= tweet.text %> </p> &mdash; <% tweet.user.name %>
+    <a href="https://twitter.com/twitterapi/status/<%= tweet.id %>">a</a>"
+  </blockquote>
+  <% end %>
+
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
